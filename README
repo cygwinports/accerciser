@@ -1,0 +1,255 @@
+accerciser
+------------------------------------------
+Accerciser is an interactive Python accessibility explorer for the GNOME 
+desktop. It uses AT-SPI to inspect and control widgets, allowing you to 
+check if an application is providing correct information to assistive 
+technologies and automated test frameworks. Accerciser has a simple 
+plugin framework which you can use to create custom views of 
+accessibility information.
+
+Runtime requirements:
+  at-spi-1.18.1-1
+  ipython-0.8.1-1
+  python-2.5.1-1
+  python-atspi-1.19.3.931-1
+  python-bonobo2-2.18.2-1
+  python-gobject2-2.12.3-2
+  python-gtk2-2.10.4-2
+  python-orbit-2.14.3-1
+  python-wnck-2.18.0-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  cygport-0.2.11-1
+  gawk-3.1.5-4
+  gnome-doc-utils-0.8.0-1
+  intltool-0.35.5-1
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://live.gnome.org/Accerciser
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/gnome/sources/accerciser/
+
+-------------------------------------------
+
+Build instructions:
+  unpack accerciser-0.1.3-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./accerciser-0.1.3-X.cygport all
+
+This will create:
+  /usr/src/accerciser-0.1.3-X-src.tar.bz2
+  /usr/src/accerciser-0.1.3-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/gconf/schemas/accerciser.schemas
+  /etc/postinstall/accerciser.sh
+  /etc/preremove/accerciser.sh
+  /usr/bin/accerciser
+  /usr/lib/python2.5/site-packages/accerciser/__init__.py
+  /usr/lib/python2.5/site-packages/accerciser/__init__.pyc
+  /usr/lib/python2.5/site-packages/accerciser/__init__.pyo
+  /usr/lib/python2.5/site-packages/accerciser/accerciser.py
+  /usr/lib/python2.5/site-packages/accerciser/accerciser.pyc
+  /usr/lib/python2.5/site-packages/accerciser/accerciser.pyo
+  /usr/lib/python2.5/site-packages/accerciser/accessible_treeview.py
+  /usr/lib/python2.5/site-packages/accerciser/accessible_treeview.pyc
+  /usr/lib/python2.5/site-packages/accerciser/accessible_treeview.pyo
+  /usr/lib/python2.5/site-packages/accerciser/hotkey_manager.py
+  /usr/lib/python2.5/site-packages/accerciser/hotkey_manager.pyc
+  /usr/lib/python2.5/site-packages/accerciser/hotkey_manager.pyo
+  /usr/lib/python2.5/site-packages/accerciser/i18n.py
+  /usr/lib/python2.5/site-packages/accerciser/i18n.pyc
+  /usr/lib/python2.5/site-packages/accerciser/i18n.pyo
+  /usr/lib/python2.5/site-packages/accerciser/icons.py
+  /usr/lib/python2.5/site-packages/accerciser/icons.pyc
+  /usr/lib/python2.5/site-packages/accerciser/icons.pyo
+  /usr/lib/python2.5/site-packages/accerciser/node.py
+  /usr/lib/python2.5/site-packages/accerciser/node.pyc
+  /usr/lib/python2.5/site-packages/accerciser/node.pyo
+  /usr/lib/python2.5/site-packages/accerciser/plugin/__init__.py
+  /usr/lib/python2.5/site-packages/accerciser/plugin/__init__.pyc
+  /usr/lib/python2.5/site-packages/accerciser/plugin/__init__.pyo
+  /usr/lib/python2.5/site-packages/accerciser/plugin/base_plugin.py
+  /usr/lib/python2.5/site-packages/accerciser/plugin/base_plugin.pyc
+  /usr/lib/python2.5/site-packages/accerciser/plugin/base_plugin.pyo
+  /usr/lib/python2.5/site-packages/accerciser/plugin/message.py
+  /usr/lib/python2.5/site-packages/accerciser/plugin/message.pyc
+  /usr/lib/python2.5/site-packages/accerciser/plugin/message.pyo
+  /usr/lib/python2.5/site-packages/accerciser/plugin/plugin_manager.py
+  /usr/lib/python2.5/site-packages/accerciser/plugin/plugin_manager.pyc
+  /usr/lib/python2.5/site-packages/accerciser/plugin/plugin_manager.pyo
+  /usr/lib/python2.5/site-packages/accerciser/plugin/view.py
+  /usr/lib/python2.5/site-packages/accerciser/plugin/view.pyc
+  /usr/lib/python2.5/site-packages/accerciser/plugin/view.pyo
+  /usr/lib/python2.5/site-packages/accerciser/pyatspi.zip
+  /usr/lib/python2.5/site-packages/accerciser/script_playback.py
+  /usr/lib/python2.5/site-packages/accerciser/script_playback.pyc
+  /usr/lib/python2.5/site-packages/accerciser/script_playback.pyo
+  /usr/lib/python2.5/site-packages/accerciser/tools.py
+  /usr/lib/python2.5/site-packages/accerciser/tools.pyc
+  /usr/lib/python2.5/site-packages/accerciser/tools.pyo
+  /usr/share/accerciser/glade/accerciser.glade
+  /usr/share/accerciser/pixmaps/hicolor/22x22/acceleratorlabel.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/alert.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/animation.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/arrow.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/calendar.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/canvas.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/care.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/character.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/chart.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/checkbox.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/checkmenuitem.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/clock.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/colorchooser.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/column.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/columnheader.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/combobox.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/cursor.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/dateeditor.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/desktopicon.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/dial.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/dialog.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/directorypane.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/drawingarea.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/embedded.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/endnote.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/entry.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/filechooser.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/filler.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/focustraversable.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/fontchooser.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/form.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/frame.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/glasspane.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/grip.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/heading.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/helpballoon.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/htmlcontainer.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/icon.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/image.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/imagemap.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/inputmethodwindow.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/invalid.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/label.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/link.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/list.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/listitem.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/menu.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/menubar.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/menuitem.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/pagetab.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/pagetablist.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/passwordtext.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/popupmenu.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/progressbar.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/pushbutton.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/radiobutton.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/radiomenuitem.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/row.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/ruler.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/scrollbar.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/scrollpane.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/section.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/separator.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/shape.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/slider.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/sound.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/spinbutton.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/splitpane.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/statusbar.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/table.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/tablecell.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/tearoffmenuitem.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/terminal.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/text.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/togglebutton.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/toolbar.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/tooltip.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/tree.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/treetable.png
+  /usr/share/accerciser/pixmaps/hicolor/22x22/window.png
+  /usr/share/accerciser/plugins/api_view.py
+  /usr/share/accerciser/plugins/console.py
+  /usr/share/accerciser/plugins/event_monitor.glade
+  /usr/share/accerciser/plugins/event_monitor.py
+  /usr/share/accerciser/plugins/interface_view.glade
+  /usr/share/accerciser/plugins/interface_view.py
+  /usr/share/accerciser/plugins/ipython_view.py
+  /usr/share/accerciser/plugins/script_recorder.glade
+  /usr/share/accerciser/plugins/script_recorder.py
+  /usr/share/applications/accerciser.desktop
+  /usr/share/doc/Cygwin/accerciser-0.1.3.README
+  /usr/share/doc/accerciser-0.1.3/AUTHORS
+  /usr/share/doc/accerciser-0.1.3/COPYING
+  /usr/share/doc/accerciser-0.1.3/ChangeLog
+  /usr/share/doc/accerciser-0.1.3/INSTALL
+  /usr/share/doc/accerciser-0.1.3/NEWS
+  /usr/share/doc/accerciser-0.1.3/README
+  /usr/share/gnome/help/accerciser/C/accerciser.xml
+  /usr/share/gnome/help/accerciser/C/figures/accerciser.png
+  /usr/share/gnome/help/accerciser/C/figures/api_browser.png
+  /usr/share/gnome/help/accerciser/C/figures/event_monitor.png
+  /usr/share/gnome/help/accerciser/C/figures/interface_viewer.png
+  /usr/share/gnome/help/accerciser/C/legal.xml
+  /usr/share/gnome/help/accerciser/en_GB/accerciser.xml
+  /usr/share/gnome/help/accerciser/en_GB/figures/accerciser.png
+  /usr/share/gnome/help/accerciser/en_GB/figures/api_browser.png
+  /usr/share/gnome/help/accerciser/en_GB/figures/event_monitor.png
+  /usr/share/gnome/help/accerciser/en_GB/figures/interface_viewer.png
+  /usr/share/gnome/help/accerciser/es/accerciser.xml
+  /usr/share/gnome/help/accerciser/es/figures/accerciser.png
+  /usr/share/gnome/help/accerciser/es/figures/api_browser.png
+  /usr/share/gnome/help/accerciser/es/figures/event_monitor.png
+  /usr/share/gnome/help/accerciser/es/figures/interface_viewer.png
+  /usr/share/gnome/help/accerciser/sv/accerciser.xml
+  /usr/share/gnome/help/accerciser/sv/figures/accerciser.png
+  /usr/share/gnome/help/accerciser/sv/figures/api_browser.png
+  /usr/share/gnome/help/accerciser/sv/figures/event_monitor.png
+  /usr/share/gnome/help/accerciser/sv/figures/interface_viewer.png
+  /usr/share/icons/hicolor/16x16/apps/accerciser.png
+  /usr/share/icons/hicolor/22x22/apps/accerciser.png
+  /usr/share/icons/hicolor/32x32/apps/accerciser.png
+  /usr/share/icons/hicolor/48x48/apps/accerciser.png
+  /usr/share/icons/hicolor/scalable/apps/accerciser.svg
+  /usr/share/locale/ar/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/ca/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/dz/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/es/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/fr/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/gl/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/he/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/nb/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/oc/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/or/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/pa/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/sv/LC_MESSAGES/accerciser.mo
+  /usr/share/omf/accerciser/accerciser-C.omf
+  /usr/share/omf/accerciser/accerciser-en_GB.omf
+  /usr/share/omf/accerciser/accerciser-es.omf
+  /usr/share/omf/accerciser/accerciser-sv.omf
+
+------------------
+
+Port Notes:
+
+----- version 0.1.3-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
