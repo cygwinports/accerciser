@@ -40,15 +40,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack accerciser-0.1.5-X-src.tar.bz2
+  unpack accerciser-0.1.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./accerciser-0.1.5-X.cygport all
+  cygport ./accerciser-0.1.6-X.cygport all
 
 This will create:
-  /usr/src/accerciser-0.1.5-X-src.tar.bz2
-  /usr/src/accerciser-0.1.5-X.tar.bz2
+  /usr/src/accerciser-0.1.6-X-src.tar.bz2
+  /usr/src/accerciser-0.1.6-X.tar.bz2
 
 -------------------------------------------
 
@@ -191,13 +191,13 @@ Files included in the binary package:
   /usr/share/accerciser/plugins/script_recorder.glade
   /usr/share/accerciser/plugins/script_recorder.py
   /usr/share/applications/accerciser.desktop
-  /usr/share/doc/Cygwin/accerciser-0.1.5.README
-  /usr/share/doc/accerciser-0.1.5/AUTHORS
-  /usr/share/doc/accerciser-0.1.5/COPYING
-  /usr/share/doc/accerciser-0.1.5/ChangeLog
-  /usr/share/doc/accerciser-0.1.5/INSTALL
-  /usr/share/doc/accerciser-0.1.5/NEWS
-  /usr/share/doc/accerciser-0.1.5/README
+  /usr/share/doc/Cygwin/accerciser-0.1.6.README
+  /usr/share/doc/accerciser-0.1.6/AUTHORS
+  /usr/share/doc/accerciser-0.1.6/COPYING
+  /usr/share/doc/accerciser-0.1.6/ChangeLog
+  /usr/share/doc/accerciser-0.1.6/INSTALL
+  /usr/share/doc/accerciser-0.1.6/NEWS
+  /usr/share/doc/accerciser-0.1.6/README
   /usr/share/gnome/help/accerciser/C/accerciser.xml
   /usr/share/gnome/help/accerciser/C/figures/accerciser.png
   /usr/share/gnome/help/accerciser/C/figures/api_browser.png
@@ -245,6 +245,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.1.6-1 -----
+Version bump.
 
 ----- version 0.1.5-1 -----
 Version bump.
