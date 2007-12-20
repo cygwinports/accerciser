@@ -8,27 +8,31 @@ plugin framework which you can use to create custom views of
 accessibility information.
 
 Runtime requirements:
-  at-spi-1.18.1-1
   ipython-0.8.1-1
   python-2.5.1-3
-  python-atspi-1.19.3.931-1
-  python-bonobo2-2.18.2-1
-  python-gobject2-2.12.3-2
-  python-gtk2-2.10.5-1
+  python-atspi-1.20.1-1
+  python-bonobo2-2.20.1-1
+  python-gconf2-2.20.1-1
+  python-gnome2-2.20.1-1
+  python-gobject2-2.14.0-1
+  python-gtk2-2.12.0-1
+  python-gtksourceview-2.20.0-1
   python-orbit-2.14.3-1
-  python-wnck-2.18.0-1
+  python-wnck-2.20.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
   cygwin-1.5.24-2
   autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  cygport-0.3.5-1
+  automake1.10-1.10-1
+  cygport-0.3.7-1
   gawk-3.1.5-4
-  gnome-doc-utils-0.10.3-1
-  intltool-0.35.5-1
+  gnome-common-2.20.0-1
+  gnome-doc-utils-0.12.0-1
+  intltool-0.36.3-1
   make-3.81-1
   pkg-config-0.21-1
+  rarian-0.6.0-1
   sed-4.1.5-2
 
 Canonical website:
@@ -40,15 +44,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack accerciser-0.1.6-X-src.tar.bz2
+  unpack accerciser-1.0.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./accerciser-0.1.6-X.cygport all
+  cygport ./accerciser-1.0.1-X.cygport all
 
 This will create:
-  /usr/src/accerciser-0.1.6-X-src.tar.bz2
-  /usr/src/accerciser-0.1.6-X.tar.bz2
+  /usr/src/accerciser-1.0.1-X-src.tar.bz2
+  /usr/src/accerciser-1.0.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -61,12 +65,18 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/accerciser/__init__.py
   /usr/lib/python2.5/site-packages/accerciser/__init__.pyc
   /usr/lib/python2.5/site-packages/accerciser/__init__.pyo
+  /usr/lib/python2.5/site-packages/accerciser/about_dialog.py
+  /usr/lib/python2.5/site-packages/accerciser/about_dialog.pyc
+  /usr/lib/python2.5/site-packages/accerciser/about_dialog.pyo
   /usr/lib/python2.5/site-packages/accerciser/accerciser.py
   /usr/lib/python2.5/site-packages/accerciser/accerciser.pyc
   /usr/lib/python2.5/site-packages/accerciser/accerciser.pyo
   /usr/lib/python2.5/site-packages/accerciser/accessible_treeview.py
   /usr/lib/python2.5/site-packages/accerciser/accessible_treeview.pyc
   /usr/lib/python2.5/site-packages/accerciser/accessible_treeview.pyo
+  /usr/lib/python2.5/site-packages/accerciser/bookmarks.py
+  /usr/lib/python2.5/site-packages/accerciser/bookmarks.pyc
+  /usr/lib/python2.5/site-packages/accerciser/bookmarks.pyo
   /usr/lib/python2.5/site-packages/accerciser/hotkey_manager.py
   /usr/lib/python2.5/site-packages/accerciser/hotkey_manager.pyc
   /usr/lib/python2.5/site-packages/accerciser/hotkey_manager.pyo
@@ -76,6 +86,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/accerciser/icons.py
   /usr/lib/python2.5/site-packages/accerciser/icons.pyc
   /usr/lib/python2.5/site-packages/accerciser/icons.pyo
+  /usr/lib/python2.5/site-packages/accerciser/main_window.py
+  /usr/lib/python2.5/site-packages/accerciser/main_window.pyc
+  /usr/lib/python2.5/site-packages/accerciser/main_window.pyo
   /usr/lib/python2.5/site-packages/accerciser/node.py
   /usr/lib/python2.5/site-packages/accerciser/node.pyc
   /usr/lib/python2.5/site-packages/accerciser/node.pyo
@@ -94,6 +107,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/accerciser/plugin/view.py
   /usr/lib/python2.5/site-packages/accerciser/plugin/view.pyc
   /usr/lib/python2.5/site-packages/accerciser/plugin/view.pyo
+  /usr/lib/python2.5/site-packages/accerciser/prefs_dialog.py
+  /usr/lib/python2.5/site-packages/accerciser/prefs_dialog.pyc
+  /usr/lib/python2.5/site-packages/accerciser/prefs_dialog.pyo
   /usr/lib/python2.5/site-packages/accerciser/pyatspi.zip
   /usr/lib/python2.5/site-packages/accerciser/script_playback.py
   /usr/lib/python2.5/site-packages/accerciser/script_playback.pyc
@@ -101,6 +117,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/accerciser/tools.py
   /usr/lib/python2.5/site-packages/accerciser/tools.pyc
   /usr/lib/python2.5/site-packages/accerciser/tools.pyo
+  /usr/lib/python2.5/site-packages/accerciser/ui_manager.py
+  /usr/lib/python2.5/site-packages/accerciser/ui_manager.pyc
+  /usr/lib/python2.5/site-packages/accerciser/ui_manager.pyo
   /usr/share/accerciser/pixmaps/hicolor/22x22/acceleratorlabel.png
   /usr/share/accerciser/pixmaps/hicolor/22x22/alert.png
   /usr/share/accerciser/pixmaps/hicolor/22x22/animation.png
@@ -188,63 +207,112 @@ Files included in the binary package:
   /usr/share/accerciser/plugins/interface_view.glade
   /usr/share/accerciser/plugins/interface_view.py
   /usr/share/accerciser/plugins/ipython_view.py
+  /usr/share/accerciser/plugins/quick_select.py
   /usr/share/accerciser/plugins/script_recorder.glade
   /usr/share/accerciser/plugins/script_recorder.py
   /usr/share/applications/accerciser.desktop
-  /usr/share/doc/Cygwin/accerciser-0.1.6.README
-  /usr/share/doc/accerciser-0.1.6/AUTHORS
-  /usr/share/doc/accerciser-0.1.6/COPYING
-  /usr/share/doc/accerciser-0.1.6/ChangeLog
-  /usr/share/doc/accerciser-0.1.6/INSTALL
-  /usr/share/doc/accerciser-0.1.6/NEWS
-  /usr/share/doc/accerciser-0.1.6/README
+  /usr/share/doc/accerciser-1.0.1/AUTHORS
+  /usr/share/doc/accerciser-1.0.1/COPYING
+  /usr/share/doc/accerciser-1.0.1/ChangeLog
+  /usr/share/doc/accerciser-1.0.1/INSTALL
+  /usr/share/doc/accerciser-1.0.1/NEWS
+  /usr/share/doc/accerciser-1.0.1/README
   /usr/share/gnome/help/accerciser/C/accerciser.xml
   /usr/share/gnome/help/accerciser/C/figures/accerciser.png
   /usr/share/gnome/help/accerciser/C/figures/api_browser.png
   /usr/share/gnome/help/accerciser/C/figures/event_monitor.png
   /usr/share/gnome/help/accerciser/C/figures/interface_viewer.png
+  /usr/share/gnome/help/accerciser/C/figures/script_recorder.png
   /usr/share/gnome/help/accerciser/C/legal.xml
+  /usr/share/gnome/help/accerciser/ca/accerciser.xml
+  /usr/share/gnome/help/accerciser/ca/figures/accerciser.png
+  /usr/share/gnome/help/accerciser/ca/figures/api_browser.png
+  /usr/share/gnome/help/accerciser/ca/figures/event_monitor.png
+  /usr/share/gnome/help/accerciser/ca/figures/interface_viewer.png
+  /usr/share/gnome/help/accerciser/ca/figures/script_recorder.png
   /usr/share/gnome/help/accerciser/en_GB/accerciser.xml
   /usr/share/gnome/help/accerciser/en_GB/figures/accerciser.png
   /usr/share/gnome/help/accerciser/en_GB/figures/api_browser.png
   /usr/share/gnome/help/accerciser/en_GB/figures/event_monitor.png
   /usr/share/gnome/help/accerciser/en_GB/figures/interface_viewer.png
+  /usr/share/gnome/help/accerciser/en_GB/figures/script_recorder.png
   /usr/share/gnome/help/accerciser/es/accerciser.xml
   /usr/share/gnome/help/accerciser/es/figures/accerciser.png
   /usr/share/gnome/help/accerciser/es/figures/api_browser.png
   /usr/share/gnome/help/accerciser/es/figures/event_monitor.png
   /usr/share/gnome/help/accerciser/es/figures/interface_viewer.png
+  /usr/share/gnome/help/accerciser/es/figures/script_recorder.png
+  /usr/share/gnome/help/accerciser/oc/accerciser.xml
+  /usr/share/gnome/help/accerciser/oc/figures/accerciser.png
+  /usr/share/gnome/help/accerciser/oc/figures/api_browser.png
+  /usr/share/gnome/help/accerciser/oc/figures/event_monitor.png
+  /usr/share/gnome/help/accerciser/oc/figures/interface_viewer.png
+  /usr/share/gnome/help/accerciser/oc/figures/script_recorder.png
   /usr/share/gnome/help/accerciser/sv/accerciser.xml
   /usr/share/gnome/help/accerciser/sv/figures/accerciser.png
   /usr/share/gnome/help/accerciser/sv/figures/api_browser.png
   /usr/share/gnome/help/accerciser/sv/figures/event_monitor.png
   /usr/share/gnome/help/accerciser/sv/figures/interface_viewer.png
+  /usr/share/gnome/help/accerciser/sv/figures/script_recorder.png
   /usr/share/icons/hicolor/16x16/apps/accerciser.png
   /usr/share/icons/hicolor/22x22/apps/accerciser.png
   /usr/share/icons/hicolor/32x32/apps/accerciser.png
   /usr/share/icons/hicolor/48x48/apps/accerciser.png
   /usr/share/icons/hicolor/scalable/apps/accerciser.svg
   /usr/share/locale/ar/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/bg/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/bn/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/bn_IN/LC_MESSAGES/accerciser.mo
   /usr/share/locale/ca/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/da/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/de/LC_MESSAGES/accerciser.mo
   /usr/share/locale/dz/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/el/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/en_CA/LC_MESSAGES/accerciser.mo
   /usr/share/locale/en_GB/LC_MESSAGES/accerciser.mo
   /usr/share/locale/es/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/fi/LC_MESSAGES/accerciser.mo
   /usr/share/locale/fr/LC_MESSAGES/accerciser.mo
   /usr/share/locale/gl/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/gu/LC_MESSAGES/accerciser.mo
   /usr/share/locale/he/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/hi/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/hu/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/ja/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/lt/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/lv/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/mk/LC_MESSAGES/accerciser.mo
   /usr/share/locale/nb/LC_MESSAGES/accerciser.mo
   /usr/share/locale/oc/LC_MESSAGES/accerciser.mo
   /usr/share/locale/or/LC_MESSAGES/accerciser.mo
   /usr/share/locale/pa/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/pl/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/pt/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/ru/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/si/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/sl/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/sq/LC_MESSAGES/accerciser.mo
   /usr/share/locale/sv/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/te/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/th/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/tr/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/uk/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/vi/LC_MESSAGES/accerciser.mo
+  /usr/share/man/man1/accerciser.1.gz
   /usr/share/omf/accerciser/accerciser-C.omf
+  /usr/share/omf/accerciser/accerciser-ca.omf
   /usr/share/omf/accerciser/accerciser-en_GB.omf
   /usr/share/omf/accerciser/accerciser-es.omf
+  /usr/share/omf/accerciser/accerciser-oc.omf
   /usr/share/omf/accerciser/accerciser-sv.omf
 
 ------------------
 
 Port Notes:
+
+----- version 1.0.1-1 -----
+Version bump for GNOME 2.20.
 
 ----- version 0.1.6-1 -----
 Version bump.

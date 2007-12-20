@@ -1,5 +1,5 @@
 category: Gnome
-requires: at-spi ipython python python-atspi python-bonobo2 python-gobject2 python-gtk2 python-orbit python-wnck
+requires: at-spi ipython python python-atspi python-bonobo2 python-gconf2 python-gnome2 python-gobject2 python-gtk2 python-gtksourceview python-orbit python-wnck
 sdesc: "GNOME interactive accessibility explorer"
 ldesc: "Accerciser is an interactive Python accessibility explorer for 
 the GNOME desktop. It uses AT-SPI to inspect and control widgets, 
