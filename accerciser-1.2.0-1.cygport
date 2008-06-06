@@ -1,0 +1,6 @@
+inherit gnome2
+
+DESCRIPTION="GNOME interactive accessibility explorer"
+HOMEPAGE="http://live.gnome.org/Accerciser"
+
+DIFF_EXCLUDES="accerciser.desktop.in"
