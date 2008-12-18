@@ -8,30 +8,30 @@ plugin framework which you can use to create custom views of
 accessibility information.
 
 Runtime requirements:
-  ipython-0.8.2-1
-  python-2.5.2-1
-  python-atspi-1.22.1-1
-  python-bonobo2-2.22.1-1
-  python-gconf2-2.22.1-1
-  python-gnome2-2.22.1-1
-  python-gobject2-2.14.2-1
-  python-gtk2-2.12.1-1
-  python-gtksourceview-2.22.0-1
+  ipython-0.9.1-1
+  python-2.5.2-4
+  python-bonobo2-2.22.3-1
+  python-gconf2-2.22.3-1
+  python-gnome2-2.22.3-1
+  python-gobject2-2.15.4-1
+  python-gtk2-2.13.0-1
+  python-gtksourceview-2.24.0-1
   python-orbit-2.14.3-1
-  python-wnck-2.22.0-1
+  python-pyatspi-1.24.0-1
+  python-wnck-2.24.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.10-1.10.1-1
-  cygport-0.3.11-1
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  cygport-0.4.3-1
   gawk-3.1.6-1
-  gnome-common-2.20.0-2
-  gnome-doc-utils-0.12.2-1
-  intltool-0.37.1-1
+  gnome-common-2.24.0-1
+  gnome-doc-utils-0.14.0-1
+  intltool-0.40.5-1
   make-3.81-1
-  pkg-config-0.21-1
-  rarian-0.8.0-1
+  pkg-config-0.23a-2
+  rarian-0.8.1-1
   sed-4.1.5-2
 
 Canonical website:
@@ -43,15 +43,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack accerciser-1.2.0-X-src.tar.bz2
+  unpack accerciser-1.4.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./accerciser-1.2.0-X.cygport all
+  cygport ./accerciser-1.4.0-X.cygport all
 
 This will create:
-  /usr/src/accerciser-1.2.0-X-src.tar.bz2
-  /usr/src/accerciser-1.2.0-X.tar.bz2
+  /usr/src/accerciser-1.4.0-X-src.tar.bz2
+  /usr/src/accerciser-1.4.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -212,12 +212,12 @@ Files included in the binary package:
   /usr/share/accerciser/plugins/validate.glade
   /usr/share/accerciser/plugins/validate.py
   /usr/share/applications/accerciser.desktop
-  /usr/share/doc/accerciser-1.2.0/AUTHORS
-  /usr/share/doc/accerciser-1.2.0/COPYING
-  /usr/share/doc/accerciser-1.2.0/ChangeLog
-  /usr/share/doc/accerciser-1.2.0/INSTALL
-  /usr/share/doc/accerciser-1.2.0/NEWS
-  /usr/share/doc/accerciser-1.2.0/README
+  /usr/share/doc/accerciser-1.4.0/AUTHORS
+  /usr/share/doc/accerciser-1.4.0/COPYING
+  /usr/share/doc/accerciser-1.4.0/ChangeLog
+  /usr/share/doc/accerciser-1.4.0/INSTALL
+  /usr/share/doc/accerciser-1.4.0/NEWS
+  /usr/share/doc/accerciser-1.4.0/README
   /usr/share/gnome/help/accerciser/C/accerciser.xml
   /usr/share/gnome/help/accerciser/C/figures/accerciser.png
   /usr/share/gnome/help/accerciser/C/figures/api_browser.png
@@ -249,12 +249,6 @@ Files included in the binary package:
   /usr/share/gnome/help/accerciser/fr/figures/event_monitor.png
   /usr/share/gnome/help/accerciser/fr/figures/interface_viewer.png
   /usr/share/gnome/help/accerciser/fr/figures/script_recorder.png
-  /usr/share/gnome/help/accerciser/it/accerciser.xml
-  /usr/share/gnome/help/accerciser/it/figures/accerciser.png
-  /usr/share/gnome/help/accerciser/it/figures/api_browser.png
-  /usr/share/gnome/help/accerciser/it/figures/event_monitor.png
-  /usr/share/gnome/help/accerciser/it/figures/interface_viewer.png
-  /usr/share/gnome/help/accerciser/it/figures/script_recorder.png
   /usr/share/gnome/help/accerciser/oc/accerciser.xml
   /usr/share/gnome/help/accerciser/oc/figures/accerciser.png
   /usr/share/gnome/help/accerciser/oc/figures/api_browser.png
@@ -294,10 +288,12 @@ Files included in the binary package:
   /usr/share/locale/hu/LC_MESSAGES/accerciser.mo
   /usr/share/locale/it/LC_MESSAGES/accerciser.mo
   /usr/share/locale/ja/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/kn/LC_MESSAGES/accerciser.mo
   /usr/share/locale/lt/LC_MESSAGES/accerciser.mo
   /usr/share/locale/lv/LC_MESSAGES/accerciser.mo
   /usr/share/locale/mk/LC_MESSAGES/accerciser.mo
   /usr/share/locale/ml/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/mr/LC_MESSAGES/accerciser.mo
   /usr/share/locale/nb/LC_MESSAGES/accerciser.mo
   /usr/share/locale/nl/LC_MESSAGES/accerciser.mo
   /usr/share/locale/oc/LC_MESSAGES/accerciser.mo
@@ -317,19 +313,23 @@ Files included in the binary package:
   /usr/share/locale/uk/LC_MESSAGES/accerciser.mo
   /usr/share/locale/vi/LC_MESSAGES/accerciser.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/zh_HK/LC_MESSAGES/accerciser.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/accerciser.mo
   /usr/share/man/man1/accerciser.1.gz
   /usr/share/omf/accerciser/accerciser-C.omf
   /usr/share/omf/accerciser/accerciser-ca.omf
   /usr/share/omf/accerciser/accerciser-en_GB.omf
   /usr/share/omf/accerciser/accerciser-es.omf
   /usr/share/omf/accerciser/accerciser-fr.omf
-  /usr/share/omf/accerciser/accerciser-it.omf
   /usr/share/omf/accerciser/accerciser-oc.omf
   /usr/share/omf/accerciser/accerciser-sv.omf
 
 ------------------
 
 Port Notes:
+
+----- version 1.4.0-1 -----
+Version bump for GNOME 2.24.
 
 ----- version 1.2.0-1 -----
 Version bump for GNOME 2.22.
