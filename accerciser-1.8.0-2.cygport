@@ -4,3 +4,5 @@ DESCRIPTION="GNOME interactive accessibility explorer"
 HOMEPAGE="http://live.gnome.org/Accerciser"
 
 DIFF_EXCLUDES="accerciser.desktop.in"
+
+CYGCONF_ARGS="--without-pyreqs"
