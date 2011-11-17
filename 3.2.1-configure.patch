@@ -1,0 +1,15 @@
+--- origsrc/accerciser-3.2.1/configure.in	2011-10-17 16:16:20.000000000 -0500
++++ src/accerciser-3.2.1/configure.in	2011-11-17 04:25:15.644928800 -0600
+@@ -15,9 +15,9 @@ ATSPI_REQUIRED=2.1.5
+ GLIB_GSETTINGS
+ 
+ dnl == check for requeriments ==
+-PKG_CHECK_MODULES([GTK], [gtk+-3.0 >= GTK_REQUIRED])
+-PKG_CHECK_MODULES([PYGOBJECT], [pygobject-3.0 >= PYGOBJECT_REQUIRED])
+-PKG_CHECK_MODULES([ATSPI2], [atspi-2 >= ATSPI_REQUIRED])
++PKG_CHECK_MODULES([GTK], [gtk+-3.0 >= $GTK_REQUIRED])
++PKG_CHECK_MODULES([PYGOBJECT], [pygobject-3.0 >= $PYGOBJECT_REQUIRED])
++PKG_CHECK_MODULES([ATSPI2], [atspi-2 >= $ATSPI_REQUIRED])
+ 
+ dnl == i18n ==
+ GETTEXT_PACKAGE=accerciser
