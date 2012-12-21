@@ -1,0 +1,20 @@
+inherit gnome2 python
+
+NAME="accerciser"
+VERSION=3.6.2
+RELEASE=1
+CATEGORY="GNOME"
+SUMMARY="GNOME interactive accessibility explorer"
+DESCRIPTION="Accerciser is an interactive Python accessibility explorer for
+the GNOME desktop. It uses AT-SPI to inspect and control widgets, allowing you
+to check if an application is providing correct information to assistive
+technologies and automated test frameworks. Accerciser has a simple plugin
+framework which you can use to create custom views of accessibility information."
+REQUIRES="girepository-Wnck3.0"
+HOMEPAGE="http://live.gnome.org/Accerciser"
+
+PATCH_URI="3.2.1-configure.patch"
+
+DIFF_EXCLUDES="accerciser.desktop.in"
+
+CYGCONF_ARGS="--without-pyreqs"
