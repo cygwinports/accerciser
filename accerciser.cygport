@@ -1,8 +1,8 @@
-inherit gnome2 python
+inherit gnome2 python3
 
 NAME="accerciser"
-VERSION=3.6.2
-RELEASE=2
+VERSION=3.8.2
+RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="GNOME interactive accessibility explorer"
 DESCRIPTION="Accerciser is an interactive Python accessibility explorer for
